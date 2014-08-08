@@ -1,0 +1,9 @@
+<template name = "blab">
+  {{> navbar}}
+  <div id ="messages">
+    {{#each allMessages }}
+      {{> message }}
+    {{/each}}
+  </div>
+  {{> chat_box}}
+</template>

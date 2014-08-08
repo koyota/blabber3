@@ -9,9 +9,10 @@ Template.login.events
       if error
         $("h1").html("user not found")
       else
+        $("h1").html("")
         console.log "success! you are logged in"
         console.log Meteor.user()
-        Router.go "success"
+        Router.go "blab"
     e.preventDefault()
     false
 
