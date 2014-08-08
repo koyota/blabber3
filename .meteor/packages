@@ -10,3 +10,6 @@ accounts-base
 accounts-password
 coffeescript
 iron-router
+http
+foundation
+less

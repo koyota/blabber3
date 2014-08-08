@@ -17,9 +17,12 @@ Template.login.events
 
 Template.success.events
   'click #logout': (e,t) ->
-    Meteor.logout()
-    Router.go "login"
-
+    Meteor.logout (error) ->
+      if error
+        console.log error
+      else
+        console.log "Logout successfully"
+        Router.go "login"
 
 
 

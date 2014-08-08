@@ -3,6 +3,7 @@ createUser = (email, password) ->
 
 
 
+
 Template.registration.events
 
   'submit #registration-form' : (e,t) ->
